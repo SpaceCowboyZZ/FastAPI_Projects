@@ -47,7 +47,7 @@ def get_animal(id: int):
 #     index = atributos_lista.index(next((attr for attr in atributos_lista if attr.id == id), None))
 #     if index >= 0:
 #         atributos_lista.remove(atributos_lista[index])
-#     return {"message": f"Animal with ID {id} was deleted."}
+#     return {"message": f"Animal with ID {id} was deleted."}    #this also works, probably better than the actual code but i don't understand it very well
 
 @app.delete('/animais/{id}')
 async def del_animal(id: int):
